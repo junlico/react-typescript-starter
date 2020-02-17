@@ -5,7 +5,8 @@
   "author": "junlico",
   "scripts": {
     "start": "next",
-    "build": "next build"
+    "build": "next build",
+    "export": "next export"
   },
   "dependencies": {
     "isomorphic-unfetch": "^3.0.0",
