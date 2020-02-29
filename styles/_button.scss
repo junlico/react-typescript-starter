@@ -1,0 +1,17 @@
+.btn {
+  -webkit-appearance: none;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  background-color: transparent;
+
+  object {
+    pointer-events: none;
+  }
+}
+
+.svg {
+  vertical-align: middle;
+  width: 1.875rem;
+  height: 1.875rem;
+}

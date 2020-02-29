@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 
-import allQuotes from '../../../quotes.json';
+import allQuotes from '../../quotes.json';
 
 type Middleware = (req: NextApiRequest, res: NextApiResponse) => void;
 

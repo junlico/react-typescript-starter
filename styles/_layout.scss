@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin-right: calc(-100vw + 100%);
+  overflow-x: hidden;
+}
+
+main {
+  margin-top: $header-height;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}

@@ -1,15 +1,12 @@
 /* eslint-disable @typescript-eslint/require-await */
 import { NextPage } from 'next';
-import Layout from '../components/Layout';
 
 type AboutProps = {
   userAgent?: string;
 };
 
 const About: NextPage<AboutProps> = ({ userAgent }) => (
-  <Layout>
-    <h1>Hello world! - user agent: {userAgent}</h1>
-  </Layout>
+  <h1>Hello world! - user agent: {userAgent}</h1>
 );
 
 About.getInitialProps = async ({ req }): Promise<AboutProps> => {

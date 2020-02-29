@@ -3,8 +3,6 @@ import { useRouter } from 'next/router';
 import useSWR from 'swr';
 import fetch from 'isomorphic-unfetch';
 
-import Layout from '../components/Layout';
-
 interface QuoteProps {
   author: string;
   quote: string;
@@ -33,36 +31,27 @@ const Index: React.FC = () => {
   if (error) quote = 'Failed to fetch the quote';
 
   return (
-    <Layout>
-      <main className="center">
-        <div className="quote">{quote}</div>
-        {author && <span className="author"> - {author}</span>}
+    <>
+      <div className="quote">{quote}</div>
+      {author && <span className="author"> - {author}</span>}
 
-        <style jsx>
-          {`
-            main {
-              width: 90%;
-              max-width: 900px;
-              margin: 300px auto;
-              text-align: center;
-            }
+      <style jsx>
+        {`
+          .quote {
+            font-family: cursive;
+            color: #e243de;
+            font-size: 24px;
+            padding-bottom: 10px;
+          }
 
-            .quote {
-              font-family: cursive;
-              color: #e243de;
-              font-size: 24px;
-              padding-bottom: 10px;
-            }
-
-            .author {
-              font-family: sans-serif;
-              color: #559834;
-              font-size: 20px;
-            }
-          `}
-        </style>
-      </main>
-    </Layout>
+          .author {
+            font-family: sans-serif;
+            color: #559834;
+            font-size: 20px;
+          }
+        `}
+      </style>
+    </>
   );
 };
 
